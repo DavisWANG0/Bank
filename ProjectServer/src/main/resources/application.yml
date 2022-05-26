@@ -1,0 +1,33 @@
+spring:
+  mvc:
+    async:
+      request-timeout: 2000
+
+  activemq:
+    broker-url: tcp://101.132.250.23:61616
+    user: admin
+    password: admin
+    in-memory: true
+    pool:
+      enabled: true
+      max-connections: 10
+      idle-timeout: 30000
+
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://101.132.250.23:3306/bankingDB?serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+
+
+file:
+  secretId: AKIDCF2YnmVx83i6D3dxzlGUQ5TcU5PSFl0x
+  secretKey: iALGuHMAi00jCOJyMUP3QWLtABwPbXCb
+  regionName: ap-shanghai
+  bucketName: covenant-1308013334
+
+server:
+  port: 81
+
